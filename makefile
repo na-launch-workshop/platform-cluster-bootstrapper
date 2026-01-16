@@ -35,7 +35,7 @@ build:
 		-e CLUSTER_PASSWORD=$(CLUSTER_PASSWORD) \
 		-e ROSA_TOKEN=${ROSA_TOKEN} \
 		-e VAULT_TOKEN=${VAULT_TOKEN} \
-		docker.io/cengleby86/bootstrapper:latest \
+		quay.io/na-east-launch/bootstrapper:latest \
 		bash -c "\
 			j2 --format=env config.yaml > vars.yaml \
 			&& echo -e '\\nJinja2 template rendered\\n' \
@@ -54,7 +54,7 @@ plan:
 		-e CLUSTER_PASSWORD=$(CLUSTER_PASSWORD) \
 		-e ROSA_TOKEN=${ROSA_TOKEN} \
 		-e VAULT_TOKEN=${VAULT_TOKEN} \
-		docker.io/cengleby86/bootstrapper:latest \
+		quay.io/na-east-launch/bootstrapper:latest \
 		bash -c "\
 			j2 --format=env config.yaml > vars.yaml \
 			&& echo -e '\\nJinja2 template rendered\\n' \
@@ -73,7 +73,7 @@ configure:
 		-e CLUSTER_PASSWORD=$(CLUSTER_PASSWORD) \
 		-e ROSA_TOKEN=${ROSA_TOKEN} \
 		-e VAULT_TOKEN=${VAULT_TOKEN} \
-		docker.io/cengleby86/bootstrapper:latest \
+		quay.io/na-east-launch/bootstrapper:latest \
 		bash -c "\
 			j2 --format=env config.yaml > vars.yaml \
 			&& echo -e '\\nJinja2 template rendered\\n' \
@@ -91,7 +91,7 @@ cleanup:
 		-e CLUSTER_PASSWORD=$(CLUSTER_PASSWORD) \
 		-e ROSA_TOKEN=${ROSA_TOKEN} \
 		-e VAULT_TOKEN=${VAULT_TOKEN} \
-		docker.io/cengleby86/bootstrapper:latest \
+		quay.io/na-east-launch/bootstrapper:latest \
 		bash -c "\
 			j2 --format=env config.yaml > vars.yaml \
 			&& echo -e '\\nJinja2 template rendered\\n' \
