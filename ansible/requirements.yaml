@@ -3,7 +3,7 @@
 collections:
 
   - name: bootstrap.workshop
-    source: https://github.com/poc-examples/ansible-collections.git#/bootstrap/workshop
+    source: https://github.com/na-launch-workshop/platform-ansible-collections.git#/bootstrap/workshop
     type: git
     version: main
 

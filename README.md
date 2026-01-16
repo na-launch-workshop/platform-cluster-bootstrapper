@@ -1,6 +1,6 @@
 # Cluster Bootstrapper
 
-Cluster Bootstrapper is a multi-cluster orchestration tool designed for spinning up OpenShift-based demo environments([Workshops Respository](https://github.com/poc-examples/workshops)) that simulate real-world topologies. It automates infrastructure creation, GitOps setup([rollout-controller](https://github.com/poc-examples/charts/tree/main/charts/rollout-controller)), shared services bootstrapping (e.g. Vault, ArgoCD, DevHub), and workload deployment across dev/test/prod or hybrid cloud setups.
+Cluster Bootstrapper is a multi-cluster orchestration tool designed for spinning up OpenShift-based demo environments([Workshops Respository](https://github.com/na-launch-workshop/workshops)) that simulate real-world topologies. It automates infrastructure creation, GitOps setup([rollout-controller](https://github.com/na-launch-workshop/platform-charts/tree/main/charts/rollout-controller)), shared services bootstrapping (e.g. Vault, ArgoCD, DevHub), and workload deployment across dev/test/prod or hybrid cloud setups.
 
 >⚠️ Not production-grade. 
 > This is a rapid prototyping and enablement tool for internal teams and POCs. Built to show what's possible, not how to do it in production.
@@ -15,13 +15,13 @@ Cluster Bootstrapper is a multi-cluster orchestration tool designed for spinning
 
 ## Available Demos
 
-- [Catalog of Workshops](https://poc-examples.github.io/cluster-bootstrapper/workshops/index.html) (Backed by rollout-controller chart)
+- [Catalog of Workshops](https://na-launch-workshop.github.io/platform-cluster-bootstrapper/workshops/index.html) (Backed by rollout-controller chart)
 
 ## Quickstart Guide
-- [Architecture](https://poc-examples.github.io/cluster-bootstrapper/quickstart/architecture.html)
-- [Prerequisites](https://poc-examples.github.io/cluster-bootstrapper/quickstart/prerequisites.html)
-- [Quickstart Guide](https://poc-examples.github.io/cluster-bootstrapper/quickstart/quickstart.html)
-- [Troubleshooting](https://poc-examples.github.io/cluster-bootstrapper/quickstart/troubleshooting.html)
+- [Architecture](https://na-launch-workshop.github.io/platform-cluster-bootstrapper/quickstart/architecture.html)
+- [Prerequisites](https://na-launch-workshop.github.io/platform-cluster-bootstrapper/quickstart/prerequisites.html)
+- [Quickstart Guide](https://na-launch-workshop.github.io/platform-cluster-bootstrapper/quickstart/quickstart.html)
+- [Troubleshooting](https://na-launch-workshop.github.io/platform-cluster-bootstrapper/quickstart/troubleshooting.html)
 
 ## Deployment Time Expectations
 | Platform | Cluster Build | Settle Time | Workload Deploy |
@@ -43,7 +43,7 @@ If adapting this for real environments, you’ll need to implement:
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/poc-examples/cluster-bootstrapper/blob/main/CONTRIBUTING.md) for guidelines.
+See [CONTRIBUTING.md](https://github.com/na-launch-workshop/platform-cluster-bootstrapper/blob/main/CONTRIBUTING.md) for guidelines.
 
 ## Versioning
 

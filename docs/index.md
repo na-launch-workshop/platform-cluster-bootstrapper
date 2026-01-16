@@ -1,4 +1,4 @@
-Cluster Bootstrapper is a GitHub repository designed to set up an OpenShift cluster and deploy demos from the [Workshops Respository](https://github.com/poc-examples/workshops).  These charts work together to provide an easy to deploy demonstration platform for previewing Red Hat OpenShift products.  
+Cluster Bootstrapper is a GitHub repository designed to set up an OpenShift cluster and deploy demos from the [Workshops Respository](https://github.com/na-launch-workshop/workshops).  These charts work together to provide an easy to deploy demonstration platform for previewing Red Hat OpenShift products.  
 
 > Note: This is not intended for best-practice implementation.
 
@@ -6,7 +6,7 @@ Cluster Bootstrapper is a GitHub repository designed to set up an OpenShift clus
 
 ## Available Demos
 
-- [Catalog of Workshops](https://poc-examples.github.io/workshops/)
+- [Catalog of Workshops](https://na-launch-workshop.github.io/workshops/)
 
 ## Quickstart Guide
 - [Prerequisites](quickstart/prerequisites.md)
@@ -19,7 +19,7 @@ For live systems, ensure you have robust IAM policies and access controls in pla
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/poc-examples/cluster-bootstrapper/blob/main/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/na-launch-workshop/platform-cluster-bootstrapper/blob/main/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 

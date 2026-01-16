@@ -1,8 +1,8 @@
 ## Prerequisites
 
-Under the hood this bootstrapper runs using the **[bootstrapper container](https://github.com/poc-examples/container-library/blob/main/tools/bootstrapper/Dockerfile)** pulled from **[quay.io](https://quay.io/organization/na-east-launch)**.  The container contains the versioned software required to run the bootstrapping processes. 
+Under the hood this bootstrapper runs using the **[bootstrapper container](https://github.com/na-launch-workshop/platform-container-library/blob/main/tools/bootstrapper/Dockerfile)** pulled from **[quay.io](https://quay.io/organization/na-east-launch)**.  The container contains the versioned software required to run the bootstrapping processes. 
 
-Currently, this bootstrapper is executed using make targets located in the root repository **[makefile](https://github.com/poc-examples/cluster-bootstrapper/blob/main/makefile)** in order to simplify set up commands.
+Currently, this bootstrapper is executed using make targets located in the root repository **[makefile](https://github.com/na-launch-workshop/platform-cluster-bootstrapper/blob/main/makefile)** in order to simplify set up commands.
 
 ## System Requirements
 

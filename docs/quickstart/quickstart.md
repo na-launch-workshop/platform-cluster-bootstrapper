@@ -11,7 +11,7 @@ Check that the **[pre-requisites](prerequisites.md)** are met.
 1. Clone the repository and change to the created directory:
 
    ```bash
-   git clone https://github.com/poc-examples/cluster-bootstrapper.git
+   git clone https://github.com/na-launch-workshop/platform-cluster-bootstrapper.git
    cd cluster-bootstrapper
    ```
 
@@ -55,7 +55,7 @@ Check that the **[pre-requisites](prerequisites.md)** are met.
      offline_token: "{% raw %}{{ ROSA_TOKEN }}{% endraw %}" # Uses Environment Variable ROSA_TOKEN
    ```
 
-   The second block `config` allows you to point to any available demo chart. See **[Available Workshops](https://poc-examples.github.io/workshops/)**.  Make sure `workshop.chart` is `enabled` and the rest of the settings match those seen in **[Available Workshops](https://poc-examples.github.io/workshops/)**.
+   The second block `config` allows you to point to any available demo chart. See **[Available Workshops](https://na-launch-workshop.github.io/workshops/)**.  Make sure `workshop.chart` is `enabled` and the rest of the settings match those seen in **[Available Workshops](https://na-launch-workshop.github.io/workshops/)**.
 
    ```yaml
    config:
@@ -71,8 +71,8 @@ Check that the **[pre-requisites](prerequisites.md)** are met.
        chart:
          enabled: true
          name: rhoai-devex
-         version: 0.2.1
-         repo: https://poc-examples.github.io/workshops
+         version: 1.0.0
+         repo: https://na-launch-workshop.github.io/workshops
 
      secrets:
        vault:
@@ -88,7 +88,7 @@ Check that the **[pre-requisites](prerequisites.md)** are met.
    make configure
    ```
 
-   Check the outputs for the `console url` to login directly to the cluster.  From Here you can follow the workflows in the workshop at **[Available Workshops](https://poc-examples.github.io/workshops/)**.
+   Check the outputs for the `console url` to login directly to the cluster.  From Here you can follow the workflows in the workshop at **[Available Workshops](https://na-launch-workshop.github.io/workshops/)**.
 
    When you are finished with the demo the cluster can be cleaned up with:
 

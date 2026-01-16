@@ -96,7 +96,7 @@ provider "azuread" {
 {%- for instance in clusters %}
 {% if instance.cluster.create is true %}
 module "{{ instance.name }}" {
-    source = "github.com/poc-examples/terraform-clusters//modules/{{ instance.cloud }}/{{ instance.type }}"
+    source = "github.com/na-launch-workshop/platform-terraform-clusters/modules/{{ instance.cloud }}/{{ instance.type }}"
 
     providers = {
         {%- if instance.cloud == "aws" %}
