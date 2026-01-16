@@ -1,0 +1,13 @@
+# Generated Vars Files
+vars.yaml*
+
+# Generated Cosign Keys
+*.pem
+
+# Ignore everything in the terraform 
+# folder except the main files
+terraform/*
+!terraform/providers.tf
+!terraform/outputs.tf
+!terraform/main.tf.j2
+config.yaml

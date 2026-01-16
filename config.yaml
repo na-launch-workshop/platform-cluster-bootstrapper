@@ -1,0 +1,68 @@
+openshift:
+
+  credentials:
+
+    ## Allows Keycloak User Autoregistration
+    registrationAllowed: true
+
+    ## Creates Initial Users & Binds them to a group
+    users:
+      - username: "admin"
+        password: "{{ CLUSTER_PASSWORD }}"
+        group: "cluster-admins"
+
+    # Will Adjust Later for OIDC
+    # But currently need a fast solution
+    vault:
+      token: "{{ VAULT_TOKEN }}"
+
+  pullsecret: '{{ PULL_SECRET }}'
+
+  clusters:
+
+    # - name: service-cbe-1
+    #   type: aro # local, hcp, rosa, aro
+    #   version: 4.16.30
+    #   create: true
+    #   compute:
+    #     workers: 6
+    #   providerCredentials:
+    #     client_id: "<CLIENT_ID>"
+    #     client_secret: "<CLIENT_SECRET>"
+    #     subscription_id: "<SUBSCRIPTION_ID>"
+    #     tenant_id: "<TENANT_ID>"
+    #     resource_group_name: "<RESOURCE_GROUP_NAME>"
+    #     location: "<LOCATION>"
+    #   workshop:
+    #     chart:
+    #       enabled: true
+    #       name: services-cluster
+    #       version: 0.0.11
+    #       repo: https://poc-examples.github.io/workshops
+    #       settings:
+    #         role: workload
+    #         stage: dev
+    #     sharedClusterRef: shared-cbe-1
+
+    - name: shared-cbe-1
+      type: aro # local, hcp, rosa, aro
+      version: 4.16.30
+      create: true
+      compute:
+        workers: 6
+      providerCredentials:
+        client_id: "{{ CLIENT_ID }}"
+        client_secret: "{{ CLIENT_SECRET }}"
+        subscription_id: "{{ SUBSCRIPTION_ID }}"
+        tenant_id: "{{ TENANT_ID }}"
+        resource_group_name: "{{ RESOURCE_GROUP_NAME }}"
+        location: "eastus"
+      workshop:
+        chart:
+          enabled: true
+          name: orchestrator
+          version: 0.0.38
+          repo: https://poc-examples.github.io/charts
+          settings:
+            role: workload
+            stage: prod

@@ -1,0 +1,23 @@
+---
+
+- name: Configure Clusters
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  collections:
+    - community.okd
+    - community.kubernetes
+    - community.general
+    - bootstrap.workshop
+  vars_files:
+    - ../vars.yaml
+
+  tasks:
+
+    - name: Import role for each cluster
+      include_role: 
+        name: bootstrapper
+      vars:
+        cluster: "{{ item }}"
+        credentials: "{{ openshift.credentials }}"
+      loop: "{{ openshift.clusters }}"
