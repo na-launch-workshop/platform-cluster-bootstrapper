@@ -64,7 +64,7 @@ Check that the **[pre-requisites](prerequisites.md)** are met.
 
      gitops:
        enabled: true
-       channel: gitops-1.14
+       channel: gitops-1.19
        namespace: openshift-gitops
 
      workshop:
