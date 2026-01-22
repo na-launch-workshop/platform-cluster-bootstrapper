@@ -1,0 +1,13 @@
+site_name: "Red Hat Launch Workshop - Cluster Bootstrapper"
+site_description: "Home"
+
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Prerequisites: quickstart/prerequisites.md
+  - Quick Start Guide: quickstart/quickstart.md
+  - Troubleshooting: troubleshooting.md
+  - Advanced: advanced.md
+
+plugins:
+  - techdocs-core

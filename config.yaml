@@ -9,7 +9,6 @@ openshift:
     users:
       - username: "admin"
         password: "{{ CLUSTER_PASSWORD }}"
-        group: "cluster-admins"
 
     # Will Adjust Later for OIDC
     # But currently need a fast solution
@@ -61,7 +60,7 @@ openshift:
         chart:
           enabled: true
           name: orchestrator
-          version: 1.0.0
+          version: 1.0.1
           repo: https://na-launch-workshop.github.io/platform-charts
           settings:
             role: workload

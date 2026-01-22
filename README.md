@@ -1,4 +1,4 @@
-# Cluster Bootstrapper
+# Red Hat Launch Workshop - Cluster Bootstrapper
 
 Cluster Bootstrapper is a multi-cluster orchestration tool designed for spinning up OpenShift-based demo environments([Workshops Respository](https://github.com/na-launch-workshop/workshops)) that simulate real-world topologies. It automates infrastructure creation, GitOps setup([rollout-controller](https://github.com/na-launch-workshop/platform-charts/tree/main/charts/rollout-controller)), shared services bootstrapping (e.g. Vault, ArgoCD, DevHub), and workload deployment across dev/test/prod or hybrid cloud setups.
 
@@ -22,6 +22,7 @@ Cluster Bootstrapper is a multi-cluster orchestration tool designed for spinning
 - [Prerequisites](https://na-launch-workshop.github.io/platform-cluster-bootstrapper/quickstart/prerequisites.html)
 - [Quickstart Guide](https://na-launch-workshop.github.io/platform-cluster-bootstrapper/quickstart/quickstart.html)
 - [Troubleshooting](https://na-launch-workshop.github.io/platform-cluster-bootstrapper/quickstart/troubleshooting.html)
+- [Advanced](https://na-launch-workshop.github.io/platform-cluster-bootstrapper/quickstart/advanced.html)
 
 ## Deployment Time Expectations
 | Platform | Cluster Build | Settle Time | Workload Deploy |
