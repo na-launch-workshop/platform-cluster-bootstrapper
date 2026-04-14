@@ -41,7 +41,7 @@ openshift:
         chart:
           enabled: true
           name: orchestrator
-          version: 1.0.4
+          version: 1.0.9
           repo: https://na-launch-workshop.github.io/platform-charts
           settings:
             role: workload
